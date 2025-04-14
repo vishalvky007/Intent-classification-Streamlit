@@ -2,10 +2,10 @@ import streamlit as st
 import pickle
 
 # Load vectorizer and model
-with open('tfidf.pkl', 'rb') as f:
+with open('./tfidf.pkl', 'rb') as f:
     Tfi = pickle.load(f)
 
-with open('text_MLP.pkl', 'rb') as f:
+with open('./text_MLP.pkl', 'rb') as f:
     model = pickle.load(f)
 
 def clean_text(text):
